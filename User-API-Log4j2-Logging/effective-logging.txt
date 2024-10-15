@@ -1,0 +1,38 @@
+
+
+
+try {
+    // Your code that may throw an exception
+} catch (Exception e) {
+    String className = YourClassName.class.getName();
+    StackTraceElement[] stackTrace = e.getStackTrace();
+    int lineNumber = -1;
+    for (StackTraceElement element : stackTrace) {
+        if (element.getClassName().equals(className)) {
+            lineNumber = element.getLineNumber();
+            break;
+        }
+    }
+    if (lineNumber != -1) {
+        String errorMessage = "An error occurred in " + className + " at line " + lineNumber + ": " + e.getMessage();
+        logger.error(errorMessage, e);
+    } else {
+        logger.error("An error occurred: " + e.getMessage(), e);
+    }
+}
+ OR
+
+
+try {
+    // Your code that may throw an exception
+} catch (Exception e) {
+    String errorMessage = "An error occurred: " + e.getMessage();
+    StackTraceElement[] stackTrace = e.getStackTrace();
+    if (stackTrace.length > 0) {
+        errorMessage += " in " + stackTrace[0].getClassName() + " at line " + stackTrace[0].getLineNumber();
+    }
+    logger.error(errorMessage, e);
+}
+
+
+This version directly adds the class name and line number from the first element of the stack trace. If for some reason the stack trace is empty, it will still log the error message without class and line information.
