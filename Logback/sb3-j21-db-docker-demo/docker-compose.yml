@@ -1,0 +1,43 @@
+# The compose file starts with version attribute to specify the version of docker-compose
+version: "3.8"
+
+# Now We have to define services section i.e mysql DB and Springboot app services naming of the services can be anything and must be meaningfull
+services:
+  mysql:
+    container_name: mysqldb1 # while building the jar this name and port number (internal one) will be used and must be passed  
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: maindb # When using volumes the schemain volume will be used so no need to define the schema name or when defining the name use the name which is backed up in volume
+      MYSQL_USER: ash
+      MYSQL_PASSWORD: ash
+    ports:
+      - "3309:3306" # Host port 3309 mapped to container port 3306
+    volumes:
+      - sqldb1:/var/lib/mysql # Named volume mapping
+    networks:
+      - sb-mysql-net
+
+  sbrestservices:
+    container_name: springbootrestapi
+    build: 
+     context: . # Path to Dockerfile . means in current directory as both dockercompose and dockerfile are in same directory so .
+     dockerfile: Dockerfile
+    ports:
+      - "8081:8080" # Host port 8081 mapped to container port 8080
+    networks:
+      - sb-mysql-net # network binding
+    restart: on-failure # if our application failed to connect to mysql db then restart the application automatically
+
+networks:
+  sb-mysql-net:
+
+volumes:
+  sqldb1:
+   external: true
+
+
+#####Commands 
+# docker compose up :  to start all the services
+# docker compose down: to stop all the services
+# docker compose up -d: to start all the services in background

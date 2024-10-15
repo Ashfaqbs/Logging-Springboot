@@ -1,0 +1,78 @@
+2024-10-15 09:14:05 INFO  [restartedMain] c.a.e.Sb3J21DbDockerDemoApplication - Starting Sb3J21DbDockerDemoApplication using Java 21.0.4 with PID 41792 (C:\Users\ashfa\OneDrive\Desktop\My-Learning\Java\Code\SB-Docker\Docker\springboot-docker-demo\Springboot-DB-docker-demo\sb3-j21-db-docker-demo\target\classes started by ashfa in C:\Users\ashfa\OneDrive\Desktop\My-Learning\Java\Code\SB-Docker\Docker\springboot-docker-demo\Springboot-DB-docker-demo\sb3-j21-db-docker-demo)
+2024-10-15 09:14:05 INFO  [restartedMain] c.a.e.Sb3J21DbDockerDemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-15 09:14:05 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-15 09:14:05 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-15 09:14:05 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-15 09:14:05 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2024-10-15 09:14:06 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-15 09:14:06 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 09:14:06 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 09:14:06 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-15 09:14:06 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 09:14:06 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 883 ms
+2024-10-15 09:14:06 INFO  [restartedMain] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-15 09:14:06 INFO  [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-15 09:14:06 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-15 09:14:06 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-15 09:14:06 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-15 09:14:06 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d89b322
+2024-10-15 09:14:06 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-15 09:14:07 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-15 09:14:07 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-15 09:14:07 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-15 09:14:08 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-15 09:14:08 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-15 09:14:08 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-15 09:14:08 INFO  [restartedMain] c.a.e.Sb3J21DbDockerDemoApplication - Started Sb3J21DbDockerDemoApplication in 3.073 seconds (process running for 3.618)
+2024-10-15 09:14:33 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-15 09:14:33 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-15 09:14:33 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-15 09:18:21 WARN  [http-nio-8080-exec-8] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Tuna': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2024-10-15 09:19:03 WARN  [http-nio-8080-exec-10] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Chair': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2024-10-15 09:19:04 WARN  [http-nio-8080-exec-2] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Table': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2024-10-15 09:19:52 WARN  [http-nio-8080-exec-4] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Pizza': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2024-10-15 09:20:08 INFO  [http-nio-8080-exec-5] c.a.e.controller.ProductController - Received request to create user: Product(id=null, name=Lux one, price=200.0, description=Sample Desc)
+2024-10-15 09:20:08 INFO  [http-nio-8080-exec-5] c.a.example.service.ProductService - Creating Product: Product(id=null, name=Lux one, price=200.0, description=Sample Desc)
+2024-10-15 09:20:41 INFO  [http-nio-8080-exec-7] c.a.e.controller.ProductController - Received request to create user: Product(id=null, name=Lux Shoes, price=200.0, description=Sample Desc)
+2024-10-15 09:20:41 INFO  [http-nio-8080-exec-7] c.a.example.service.ProductService - Creating Product: Product(id=null, name=Lux Shoes, price=200.0, description=Sample Desc)
+2024-10-15 09:20:49 INFO  [http-nio-8080-exec-8] c.a.e.controller.ProductController - Received request to create user: Product(id=null, name=Lux Salad, price=200.0, description=Sample Desc)
+2024-10-15 09:20:49 INFO  [http-nio-8080-exec-8] c.a.example.service.ProductService - Creating Product: Product(id=null, name=Lux Salad, price=200.0, description=Sample Desc)
+2024-10-15 09:21:50 INFO  [http-nio-8080-exec-10] c.a.e.controller.ProductController - Received request to create user: Product(id=null, name=Lux Fish, price=200.0, description=Sample Desc)
+2024-10-15 09:21:50 INFO  [http-nio-8080-exec-10] c.a.example.service.ProductService - Creating Product: Product(id=null, name=Lux Fish, price=200.0, description=Sample Desc)
+2024-10-15 09:21:50 DEBUG [http-nio-8080-exec-10] c.a.example.service.ProductService - Debugging Product creation: Product(id=null, name=Lux Fish, price=200.0, description=Sample Desc)
+2024-10-15 09:23:52 INFO  [http-nio-8080-exec-4] c.a.e.controller.ProductController - Received request to create user: Product(id=null, name=Lux Table, price=200.0, description=Sample Desc)
+2024-10-15 09:23:52 INFO  [http-nio-8080-exec-4] c.a.example.service.ProductService - Creating Product: Product(id=null, name=Lux Table, price=200.0, description=Sample Desc)
+2024-10-15 09:25:57 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-10-15 09:25:57 INFO  [Thread-5] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-10-15 09:25:57 INFO  [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-15 09:25:57 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-15 09:25:57 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-15 09:25:57 INFO  [restartedMain] c.a.e.Sb3J21DbDockerDemoApplication - Starting Sb3J21DbDockerDemoApplication using Java 21.0.4 with PID 41792 (C:\Users\ashfa\OneDrive\Desktop\My-Learning\Java\Code\SB-Docker\Docker\springboot-docker-demo\Springboot-DB-docker-demo\sb3-j21-db-docker-demo\target\classes started by ashfa in C:\Users\ashfa\OneDrive\Desktop\My-Learning\Java\Code\SB-Docker\Docker\springboot-docker-demo\Springboot-DB-docker-demo\sb3-j21-db-docker-demo)
+2024-10-15 09:25:57 INFO  [restartedMain] c.a.e.Sb3J21DbDockerDemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-15 09:25:57 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-15 09:25:57 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-10-15 09:25:57 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-15 09:25:57 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 09:25:57 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 09:25:57 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-15 09:25:57 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 09:25:57 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 235 ms
+2024-10-15 09:25:57 INFO  [restartedMain] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-15 09:25:57 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-15 09:25:57 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-15 09:25:57 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-10-15 09:25:57 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7599b155
+2024-10-15 09:25:57 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-10-15 09:25:57 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-15 09:25:57 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-15 09:25:57 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-15 09:25:57 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-15 09:25:57 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-15 09:25:57 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-15 09:25:57 INFO  [restartedMain] c.a.e.Sb3J21DbDockerDemoApplication - Started Sb3J21DbDockerDemoApplication in 0.482 seconds (process running for 713.343)
+2024-10-15 09:25:57 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-15 09:26:37 INFO  [RMI TCP Connection(16)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-10-15 09:26:37 INFO  [RMI TCP Connection(16)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-10-15 09:26:37 INFO  [RMI TCP Connection(16)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-15 09:26:37 INFO  [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-10-15 09:26:37 INFO  [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
